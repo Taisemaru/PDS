@@ -9,7 +9,7 @@ M=N  #AはM×Nの行列(今回は単位行列)
 LAM=0.03 #ラムダ
 GAM=0 #ガンマ1定義
 EP=50 #反復回数
-GAM_num=5 #比べるγの数
+GAM_num=1 #比べるγの数
 stan_devi1=np.sqrt(1.1145*(10**(-3))) #256倍の増幅器雑音の標準偏差
 stan_devi2=np.sqrt(3.84*(10**(-5))) #16倍の増幅器雑音の標準偏差
 stan_devi3=np.sqrt(3.84*(10**(-5))) #16倍の増幅器雑音の標準偏差
@@ -19,7 +19,8 @@ max=255
 #=============================================
 
 GAM_array=np.array([0.08])
-GAM2_array=np.array([0.1, 0.5, 1, 5, 10])
+#GAM2_array=np.array([0.1, 0.5, 1, 5, 10])
+GAM2_array=np.array([10])
 
 import cv2
 from skimage.metrics import structural_similarity as ssim
