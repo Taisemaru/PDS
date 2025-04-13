@@ -244,7 +244,7 @@ np.savetxt('γ=10_PSNR_noisy.txt', PSNR_noise.reshape(-1, 1))
 np.savetxt('γ=10_SSIM_noisy.txt', SSIM_noise.reshape(-1, 1))
 
 side=16
-path='C:/Users/taise/python/PDS-main/PDS_result'
+path='/Users/katotaisei/Library/CloudStorage/OneDrive-個人用/2025年研究/PDS/PDS_result'
 for n in range(img_num):
   noised_img=np.vstack([np.hstack(x_noise[n][i*side:(i+1)*side])for i in range(side)])
   estimate_img0=np.vstack([np.hstack(x_img[n][0][0][i*side:(i+1)*side])for i in range(side)])
